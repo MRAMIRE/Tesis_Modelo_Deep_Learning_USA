@@ -1,5 +1,5 @@
 # Tesis_Modelo_Deep_Learning_USA
-Modelo de deep learning para la clasificación de patrones de formación en las nubes a partir de imágenes satelitales
+Modelo de deep learning para la clasificación de patrones de formación en las nubes a partir de imágenes satelitales:
 
 Las nubes poco profundas presentan un papel importante en el balance de radiación de la Tierra, ya que aportan a la determinación del clima; sin embargo, son difíciles de entender, y de representar en modelos climáticos. Para este proyecto, los científicos de Max Planck definieron cuatro patrones subjetivos de organización (para las nubes de baja densidad): azúcar, flor, pescado, y grava.
 

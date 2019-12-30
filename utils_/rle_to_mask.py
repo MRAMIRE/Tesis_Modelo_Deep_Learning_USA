@@ -1,3 +1,5 @@
+import numpy as np
+
 def rle_to_mask(rle_string, height=1400, width=2100):
   rows, cols = height, width
   if rle_string == '-1':

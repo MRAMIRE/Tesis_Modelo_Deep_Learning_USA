@@ -1,5 +1,8 @@
 from torch.utils.data import Dataset
 import pandas as pd
+import torch 
+import PIL 
+from PIL import Image
 
 class CloudDataSet(Dataset):
   def __init__(self, csv_file, root_dir,transform=None):

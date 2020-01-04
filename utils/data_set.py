@@ -1,4 +1,5 @@
 from torch.utils.data import Dataset
+import pandas as pd
 
 class CloudDataSet(Dataset):
   def __init__(self, csv_file, root_dir,transform=None):

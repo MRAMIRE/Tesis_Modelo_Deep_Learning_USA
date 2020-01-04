@@ -17,7 +17,7 @@ class UNet(nn.Module):
         self.up2 = Up(int(512), int(128), bilinear)
         self.up3 = Up(int(256), int(64), bilinear)
         self.up4 = Up(int(128), int(64), bilinear)
-        self.outc = OutConv(int(64/relation), n_classes)
+        self.outc = OutConv(int(64), n_classes)
 
     def forward(self, x):
         x1 = self.inc(x)

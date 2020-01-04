@@ -3,6 +3,7 @@ import pandas as pd
 import torch 
 import PIL 
 from PIL import Image
+from .rle_to_mask import *
 
 class CloudDataSet(Dataset):
   def __init__(self, csv_file, root_dir,transform=None):

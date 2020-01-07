@@ -1,4 +1,5 @@
 import numpy as np
+from .rle_to_mask import *
 
 def get_mask(image_id,data_frame):
   mk = []

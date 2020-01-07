@@ -1,7 +1,6 @@
 import numpy as np
 from skimage import io, transform
 import pylab as plt
-from .rle_to_mask import *
 
 def plot_img_masks(img,mask,root,alpha = 0.5):
  pri = []

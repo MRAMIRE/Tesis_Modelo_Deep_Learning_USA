@@ -10,6 +10,6 @@ def rle_to_mask(rle_string, height=1400, width=2100):
         img = np.zeros(rows*cols, dtype=np.uint8)
         for index, length in rle_pairs:
             index -= 1
-            img[index:index+length] = 1
+            img[index:index+length] = 255
         img = img.reshape(rows,cols, order='F')
         return img

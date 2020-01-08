@@ -4,7 +4,7 @@ import copy
 import pylab as plt
 from torchvision import transforms
 
-def real_vs_pred(muestra,alpha,colorPred = (1,0,0),colorReal = (0.5,1,0)):
+def real_vs_pred(muestra,val_dataset,alpha,colorPred = (1,0,0),colorReal = (0.5,1,0)):
   
   #Imagen
   image = val_dataset[muestra]['image']

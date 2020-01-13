@@ -8,7 +8,7 @@ def plot_img_masks(image,mask,root,alpha = 0.5):
    color = (0,0,1)
    img = io.imread(root + image)
    for c in range(3):
-     img[:, :, c] = np.where(mask[m] == 1,img[:, :, c] *(1 - alpha) + alpha * color[c] * 255,img[:, :, c])
+     img[:, :, c] = np.where(mask[m] == 255,img[:, :, c] *(1 - alpha) + alpha * color[c] * 255,img[:, :, c])
    pri.append(img)
 
  f, ax = plt.subplots(1, 4, figsize=(21,14))

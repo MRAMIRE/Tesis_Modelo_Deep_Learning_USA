@@ -5,7 +5,7 @@ import pylab as plt
 def plot_img_masks(image,mask,root,alpha = 0.5):
  pri = []
  for m in range(4):
-   color = (0,0,1)
+   color = (1,0,1)
    img = io.imread(root + image)
    for c in range(3):
      img[:, :, c] = np.where(mask[m] == 255,img[:, :, c] *(1 - alpha) + alpha * color[c] * 255,img[:, :, c])

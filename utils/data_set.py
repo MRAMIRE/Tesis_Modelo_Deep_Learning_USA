@@ -18,8 +18,8 @@ class CloudDataSet(Dataset):
   def __getitem__(self, idx):
     if torch.is_tensor(idx):
         idx = idx.tolist()
-    
-    if prediction = True:
+
+    if self.prediction:
         img_id = self.set_data.iloc[idx,0]
         image = Image.open(self.root_dir + self.set_data.iloc[idx, 0])
 
